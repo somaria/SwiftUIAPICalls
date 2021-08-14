@@ -11,6 +11,7 @@
 		840D88D126C7AE940008A114 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D88D026C7AE940008A114 /* ContentView.swift */; };
 		840D88D326C7AE960008A114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840D88D226C7AE960008A114 /* Assets.xcassets */; };
 		840D88D626C7AE960008A114 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840D88D526C7AE960008A114 /* Preview Assets.xcassets */; };
+		849470E026C7C767000C01C8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849470DF26C7C767000C01C8 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		840D88D026C7AE940008A114 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		840D88D226C7AE960008A114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840D88D526C7AE960008A114 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		849470DF26C7C767000C01C8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				840D88CE26C7AE940008A114 /* SwiftUIAPICallsApp.swift */,
+				849470DF26C7C767000C01C8 /* ViewModel.swift */,
 				840D88D026C7AE940008A114 /* ContentView.swift */,
 				840D88D226C7AE960008A114 /* Assets.xcassets */,
 				840D88D426C7AE960008A114 /* Preview Content */,
@@ -111,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 840D88C226C7AE940008A114;
+			packageReferences = (
+				840D88DC26C7C0E80008A114 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 840D88CC26C7AE940008A114 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840D88D126C7AE940008A114 /* ContentView.swift in Sources */,
+				849470E026C7C767000C01C8 /* ViewModel.swift in Sources */,
 				840D88CF26C7AE940008A114 /* SwiftUIAPICallsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +350,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		840D88DC26C7C0E80008A114 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 840D88C326C7AE940008A114 /* Project object */;
 }
